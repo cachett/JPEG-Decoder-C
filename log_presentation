@@ -1,0 +1,74 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 16.17      9.90     9.90                             butterfly
+ 15.40     19.34     9.43                             idct_rapide
+ 10.24     25.61     6.27                             utilisation_du_buffer
+  9.96     31.71     6.10                             stage1
+  8.25     36.76     5.05                             ycbcr_to_rgb
+  6.97     41.04     4.27                             rotor
+  5.34     44.31     3.27                             swap
+  3.72     46.59     2.28                             quantification_inverse
+  3.66     48.83     2.24                             reverse_zig_zag
+  3.64     51.06     2.23                             next_huffman_value
+  3.18     53.01     1.95                             read_bitstream
+  1.89     54.17     1.16                             set_current_pixels
+  1.55     55.12     0.95                             write_picture_ppm
+  1.53     56.06     0.94                             reverse_huffman
+  1.45     56.95     0.89                             stage4
+  0.96     57.54     0.59                             stage2
+  0.88     58.08     0.54                             reorganisation
+  0.78     58.56     0.48                             stage3
+  0.72     59.00     0.44                             decode_jpg
+  0.62     59.38     0.38                             decode_magnitude
+  0.59     59.74     0.36                             valeur_decodee_huffman_AC
+  0.54     60.07     0.33                             idct_rapide_1d
+  0.49     60.37     0.30                             get_scan_component_huffman_index
+  0.29     60.55     0.18                             close_bitstream
+  0.23     60.69     0.14                             get_huffman_table
+  0.16     60.79     0.10                             build_tabYCbCr
+  0.13     60.87     0.08                             upsampling
+  0.10     60.93     0.06                             get_frame_component_quant_index
+  0.10     60.99     0.06                             get_nb_huffman_tables
+  0.10     61.05     0.06                             load_huffman_table
+  0.08     61.10     0.05                             get_frame_component_sampling_factor
+  0.08     61.15     0.05                             get_quantization_table
+  0.07     61.19     0.04                             maj_frame_comp_index
+  0.03     61.21     0.02                             get_scan_component_id
+  0.02     61.22     0.01                             get_nb_quantization_tables
+  0.02     61.23     0.01                             reconstitue_mcu
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
